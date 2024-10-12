@@ -60,21 +60,26 @@ class $AssetsIconsGen {
   /// File path: assets/icons/template.svg
   SvgGenImage get template => const SvgGenImage('assets/icons/template.svg');
 
-  /// File path: assets/icons/template.svg
+  /// File path: assets/icons/ic_settings.svg
   SvgGenImage get icSettings =>
       const SvgGenImage('assets/icons/ic_settings.svg');
 
-  /// File path: assets/icons/template.svg
+  /// File path: assets/icons/ic_import.svg
   SvgGenImage get icImport => const SvgGenImage('assets/icons/ic_import.svg');
 
-  /// File path: assets/icons/template.svg
+  /// File path: assets/icons/ic_export.svg
   SvgGenImage get icExport => const SvgGenImage('assets/icons/ic_export.svg');
 
-  /// File path: assets/icons/template.svg
+  /// File path: assets/icons/ic_logout.svg
   SvgGenImage get icLogout => const SvgGenImage('assets/icons/ic_logout.svg');
+
+  /// File path: assets/icons/ic_chat_support.svg
+  SvgGenImage get icChatSupport =>
+      const SvgGenImage('assets/icons/ic_chat_support.svg');
 
   /// List of all assets
   List<SvgGenImage> get values => [
+        icChatSupport,
         icExport,
         icImport,
         icSettings,

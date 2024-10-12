@@ -35,10 +35,11 @@ class NotificationsTile extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           CircleAvatar(
+            radius: AppTextSize.bodyMediumFont,
             backgroundColor: appSchemeLight.primary,
-            radius: 15,
             child: CustomText(
               text: '1',
+              fontSize: AppTextSize.bodyxSmallFont,
               fontWeight: bold(),
               color: appSchemeLight.background,
             ),

@@ -75,10 +75,10 @@ class _CustomDrawerState extends State<CustomDrawer> {
                       )),
                   InkWell(
                       onTap: () {},
-                      child: const Row(
+                      child: Row(
                         children: [
-                          Icon(Icons.support_agent_sharp),
-                          CustomText(text: 'Chat Support'),
+                          Assets.icons.icChatSupport.svg(),
+                          const CustomText(text: 'Chat Support'),
                         ],
                       )),
                   InkWell(

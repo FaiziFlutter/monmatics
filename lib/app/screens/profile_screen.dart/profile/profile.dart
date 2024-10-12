@@ -35,12 +35,15 @@ class _ProfileState extends State<Profile> {
             children: [
               Stack(
                 children: [
-                  const CircleAvatar(
-                    radius: 50,
-                    child: Icon(Icons.person),
+                  SizedBox(
+                    width: appWidth(context) * 0.4,
+                    child: const CircleAvatar(
+                      radius: 50,
+                      child: Icon(Icons.person),
+                    ),
                   ),
                   Positioned(
-                    right: -3,
+                    right: 0,
                     bottom: 0,
                     child: InkWell(
                       onTap: () {},
@@ -66,22 +69,31 @@ class _ProfileState extends State<Profile> {
                   color: appSchemeLight.primary,
                 ),
               ),
-              const CustomTextFormField(
+              CustomTextFormField(
+                isEnabled: false,
+                hintcolor: appSchemeLight.onSurface,
                 bottomPadding: 0,
                 fieldName: 'Email',
+                filled: false,
                 hint: 'Monmatics@gmail.com',
               ),
               CustomTextFormField(
                 fieldName: 'Password',
                 obscureText: true,
+                filled: false,
+                isEnabled: false,
+                hintcolor: appSchemeLight.onSurface,
                 hint: '**********',
-                suffixIcon: InkWell(
+              ),
+              Align(
+                alignment: Alignment.centerRight,
+                child: InkWell(
                   onTap: () {
                     Get.toNamed(AppRoutes.checkEmail);
                   },
                   child: CustomText(
-                    text: 'Change',
-                    top: 15,
+                    text: 'Change Password',
+                    fontWeight: FontWeight.w600,
                     color: appSchemeLight.primary,
                   ),
                 ),

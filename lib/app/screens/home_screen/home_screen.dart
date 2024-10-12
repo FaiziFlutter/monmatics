@@ -57,9 +57,9 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Padding(
-              padding: const EdgeInsets.only(top: 15),
-              child: const CustomCarouselSlider(),
+            const Padding(
+              padding: EdgeInsets.only(top: 15),
+              child: CustomCarouselSlider(),
             ),
             Container(
               padding: const EdgeInsetsDirectional.only(top: 10, bottom: 10),
